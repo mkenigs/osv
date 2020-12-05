@@ -7,13 +7,13 @@
 SRC = $(shell readlink -f ../..)
 
 module:
-	$(SRC)/scripts/manifest_from_host.sh -l libssl.so.1.1 > usr.manifest
+	$(SRC)/scripts/manifest_from_host.sh -l $(OPENSSL_DIR)/lib/libssl.so.1.1 > usr.manifest
 	# From krb5-libs
-	$(SRC)/scripts/manifest_from_host.sh -l libgssapi_krb5.so.2 >> usr.manifest
+	$(SRC)/scripts/manifest_from_host.sh -l $(KRB5)/lib/libgssapi_krb5.so.2 >> usr.manifest
 	# From libselinux
-	$(SRC)/scripts/manifest_from_host.sh -l libselinux.so.1 >> usr.manifest
+	$(SRC)/scripts/manifest_from_host.sh -l $(LIBSELINUX)/lib/libselinux.so.1 >> usr.manifest
 	# From xz-libs
-	$(SRC)/scripts/manifest_from_host.sh -l liblzma.so.5 >> usr.manifest
+	$(SRC)/scripts/manifest_from_host.sh -l $(XZ)/lib/liblzma.so.5 >> usr.manifest
 
 .PHONY: module
 
