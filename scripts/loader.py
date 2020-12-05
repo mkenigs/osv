@@ -1160,8 +1160,8 @@ def setup_libstdcxx():
     # "libstdc++.so.6.0.20" shared object is loaded into the debugger.
     # But because OSv is statically linked, we miss that auto-loading, so we
     #  need to look for, and run, this script explicitly.
-    sys.path += [glob('/usr/share/gcc-*/python')[0]]
-    for base, dirnames, filenames in os.walk(gdb.PYTHONDIR + '/../auto-load'):
+    sys.path += [glob(os.environ['GCC'] + '/share/gcc-*/python')[0]]
+    for base, dirnames, filenames in os.walk(os.environ['GCC']):
         for filename in fnmatch.filter(filenames, 'libstdc++.so.*-gdb.py'):
             script = os.path.join(base, filename)
             exec(compile(open(script).read(), script, 'exec'))
