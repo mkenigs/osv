@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 OSV_DIR=$(readlink -f $(dirname $0)/../..)
 CAPSTAN_REPO=$HOME/.capstan

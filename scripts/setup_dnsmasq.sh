@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Configures local light DNS service for specified NIC
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <NIC>"

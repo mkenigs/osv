@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script is an enhanced version of the original scripts found at
 # https://github.com/wkozaczuk/docker_osv_builder/tree/master/packages/scripts

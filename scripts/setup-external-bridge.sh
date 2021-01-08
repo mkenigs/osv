@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script setup a bridge that binds physical NIC
 # to it and allows exposing OSv guest IP on external network

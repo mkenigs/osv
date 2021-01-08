@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #---------------------------------------------------------------------
 # Build upload manifest out of the files found on the host filesystem
