@@ -49,6 +49,7 @@ lua5_3 #            lua-5.3.*
 #            lua-devel-5.3.*
 lua53Packages.luarocks
 zlib
+perl
         ];
     ZLIB = zlib;
     OPENSSL_INCDIR = openssl.dev + "/include";
