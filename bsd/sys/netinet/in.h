@@ -152,13 +152,13 @@ __END_DECLS
 /*
  * Default local port range, used by IP_PORTRANGE_DEFAULT
  */
-#define IPPORT_EPHEMERALFIRST	10000
+#define IPPORT_EPHEMERALFIRST	1024
 #define IPPORT_EPHEMERALLAST	65535 
  
 /*
  * Dynamic port range, used by IP_PORTRANGE_HIGH.
  */
-#define	IPPORT_HIFIRSTAUTO	49152
+#define	IPPORT_HIFIRSTAUTO	1024
 #define	IPPORT_HILASTAUTO	65535
 
 /*

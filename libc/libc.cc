@@ -69,7 +69,7 @@ int getrlimit(int resource, struct rlimit *rlim)
         break;
     }
     case RLIMIT_NOFILE:
-        set(1024*10); // FIXME: larger?
+        set(20000); // FIXME: larger?
         break;
     case RLIMIT_CORE:
         set(RLIM_INFINITY);

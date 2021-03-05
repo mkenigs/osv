@@ -197,7 +197,7 @@ struct ucred
 #define SOL_AAL         265
 #define SOL_IRDA        266
 
-#define SOMAXCONN       128
+#define SOMAXCONN       1024
 
 #define MSG_OOB       0x0001
 #define MSG_PEEK      0x0002

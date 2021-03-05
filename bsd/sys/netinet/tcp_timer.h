@@ -87,9 +87,9 @@ using namespace osv::clock::literals;
 #define	TCPTV_PERSMIN	(  5*hz)		/* retransmit persistence */
 #define	TCPTV_PERSMAX	( 60*hz)		/* maximum persist interval */
 
-#define	TCPTV_KEEP_INIT	( 75*hz)		/* initial connect keepalive */
+#define	TCPTV_KEEP_INIT	( 60*hz)		/* initial connect keepalive */
 #define	TCPTV_KEEP_IDLE	(120*60*hz)		/* dflt time before probing */
-#define	TCPTV_KEEPINTVL	( 75*hz)		/* default probe interval */
+#define	TCPTV_KEEPINTVL	( 60*hz)		/* default probe interval */
 #define	TCPTV_KEEPCNT	8			/* max probes before drop */
 
 #define TCPTV_FINWAIT2_TIMEOUT (60*hz)         /* FIN_WAIT_2 timeout if no receiver */
